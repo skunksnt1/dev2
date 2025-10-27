@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bwp-news-reuters-wsocket
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb://localhost:27017/newsdb}
+      database: ${MONGO_DB:newsdb}
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+    com.btg.pactual.hub.news: DEBUG
